@@ -72,6 +72,7 @@ set(gca,'yscal','log'); set(gca,'xscal','log');
 hold on
 loglog(f,abs(V),'.','color',colors(2));
 xlim([1/T,100]); xticks(10.^(-4:2));
+xlabel('frequency [Hz]','Interpreter','latex','FontSize',11);
 ylabel('Magnitude [A,V]','Interpreter','latex','FontSize',11);
 title("Temperature $\approx$ " + temperature + " degrees C",'Interpreter','latex','FontSize',11);
 
