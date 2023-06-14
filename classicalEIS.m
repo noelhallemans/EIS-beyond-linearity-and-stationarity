@@ -5,15 +5,17 @@ clear
 %% Classical EIS experiments on Samsung 48X cells at different SOC
 
 %% Select experiment
-temperature = 5;        % 5 or 25
+temperature = 25;        % 5 or 25
 SOC_index   = 1;        
 % For temperature =  5: 1=10%, 2=20%, ..., 8=80% 
 % For temperature = 25: 1=10%, 2=20%, ..., 9=90% 
 
 if temperature == 5
-    load('Data Samsung 48X\classicalEIS_5degrees.mat');    % Data measured at  5 degrees C
+    filepath = fullfile('Data Samsung 48X', 'classicalEIS_5degrees.mat');
+    load(filepath);    % Data measured at  5 degrees C
 elseif temperature == 25
-    load('Data Samsung 48X\classicalEIS_25degrees.mat');   % Data measured at 25 degrees C
+    filepath = fullfile('Data Samsung 48X', 'classicalEIS_25degrees.mat');
+    load(filepath);   % Data measured at 25 degrees C
 end
 SOC = SOC(SOC_index);          
 disp("Temperature = " + temperature + " degrees C,  SOC = " + SOC + "%");
