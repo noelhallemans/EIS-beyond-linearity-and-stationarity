@@ -7,9 +7,11 @@ temperature = 5;        % 5 or 25
 
 
 if temperature == 5
-    load('Data Samsung 48X\operandoEIS_5degrees.mat');    % Data measured at  5 degrees C
+    filepath = fullfile('Data Samsung 48X', 'operandoEIS_5degrees.mat');
+    load(filepath);    % Data measured at  5 degrees C
 elseif temperature == 25
-    load('Data Samsung 48X\operandoEIS_25degrees.mat');   % Data measured at 25 degrees C
+    filepath = fullfile('Data Samsung 48X', 'operandoEIS_25degrees.mat');
+    load(filepath);   % Data measured at 25 degrees C
 end
 disp("Temperature = " + temperature + " degrees C");
 
