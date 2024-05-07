@@ -1,6 +1,6 @@
 # EIS-beyond-linearity-and-stationarity
 
-Here we share data and code discussed in the paper "Electrochemical impedance spectroscopy beyond linearity and stationarity---a critical review" (https://www.sciencedirect.com/science/article/pii/S0013468623011143). These are free to use! However, if you use this data/code for publications, I would ask you to cite the paper. 
+Here we share data and code discussed in the paper "Electrochemical impedance spectroscopy beyond linearity and stationarity---A critical review" (https://www.sciencedirect.com/science/article/pii/S0013468623011143). These are free to use! However, if you use this data/code for publications, I would ask you to cite the paper. 
 
 The MATLAB script `writeORPmultisine.m` generates a sampled odd random phase multisine. Such a multisine can be written in a text file and applied through a potentiostat that can apply user-defined excitations (for instance the Gamry Interface 5000E).
 
